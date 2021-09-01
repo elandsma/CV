@@ -1,0 +1,199 @@
+
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}    
+\usepackage{pdfpages}%
+% if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage{multicol}
+% adjust the page margins
+\usepackage[scale=0.8,top=0.5cm, bottom=0.1cm]{geometry}
+% \usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\usepackage{xpatch}
+\xpatchcmd\cventry{,}{}{}{}
+
+% personal data
+
+\name{Elias}{Landsman}                               % optional, remove / comment the line if not wanted
+% \address{70 Absolute Ave.}{L4Z 0A4 Mississauga}{Canada}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\vspace*{3mm}
+\phone[mobile]{(980)~254~6113}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+% \phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{eplandsman@gmail.com}                               % optional, remove / comment the line if not wanted
+ \homepage{www.eliaslandsman.com}                         % optional, remove / comment the line if not wanted
+ \social[github]{elandsma}   
+  \social[linkedin]{elias-landsman}   
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\vspace*{-1.05mm}
+\makecvtitle
+\vspace*{-10mm}
+
+
+%education: potentially remove start times. End year only, no span.%
+
+%consider relevant coursework as a list, instead of bullets, to save space
+\section{Education}
+\cventry{}{}{UNC Asheville}{January 2020 -- Present}{\hspace*{-2.5 mm}  Bachelor of Science (Expected May 2022) }{Major in Computer Science, Concentration in Information Systems \newline Major GPA: 4.0; Cumulative GPA: 3.94} 
+
+
+
+{}{Related Coursework:}
+\vspace{-1.0em}\begin{small}
+ \begin{multicols}{3}
+    \begin{itemize}
+\item Object Oriented Programming
+\item Data Structures \& Algorithms
+\item Advanced Web Technology
+\item Data Science
+\item Intro To Cybersecurity
+\item Software Engineering
+\item Database Management Systems
+\item Big Data Analytics
+
+
+    \end{itemize}
+    \end{multicols}\end{small}
+    
+\cventry{}{}{Asheville-Buncombe Technical College}{January 2019 -- December 2019}{\hspace*{-2.5 mm} Continued Education }{Network Management, Web/Software Development}
+
+
+{}{Related Coursework:}
+\vspace{-1.0em}\begin{small}
+ \begin{multicols}{3}
+    \begin{itemize}
+\item Network and Security Foundations
+\item Web Markup and Scripting
+\item Database Concepts
+\item PHP Programming
+\item Linux/UNIX Single User
+\item Routing and Switching
+
+    \end{itemize}
+    \end{multicols}
+    \end{small}
+    
+\cventry{}{}{Appalachian State University}{August 2005 -- December 2009}{\hspace*{-2.5 mm} Bachelor of Arts }{Major in Sociology, Minor in Psychology}
+
+%place in floating column? Or make smaller somehow%
+
+%\section{Technical Skills}
+% \begin{multicols}{3}
+    % \begin{itemize}
+        % \item Java
+        % \item React
+    %     \item C\#
+    %     \item JavaScript
+    %     \item Python
+    % \end{itemize}
+    % \end{multicols}
+
+
+\section{Experience}
+% add city/state to each of these%
+
+\cventry{}{}{BlueNine Systems}{May 2021 -- Present  \vspace{-1.0em}}{}{
+\textbf{Software Engineering Intern}
+% Detailed achievements:%
+\begin{itemize}
+\item React, C\#, Microsoft SQL Server, .NET
+\item 
+\item
+\end{itemize}}
+\vspace{0.5em}
+
+
+\cventry{}{}{National Environmental Modeling and Analysis Center (NEMAC)}{June 2020 -- Present \vspace{-1.0em}}{}{
+\textbf{Software/Web Development Intern}
+% Detailed achievements:%
+\begin{itemize}
+\item 
+\item 
+\item 
+\end{itemize}}
+\vspace{0.5em}
+
+
+\cventry{}{}{Wicked Weed Brewing}{May 2014 -- August 2020 \vspace{-1.0em}}{}{
+\textbf{Head Server}
+% Detailed achievements:%
+\begin{itemize}
+\item Demonstrated leadership as the head of a team of \textasciitilde30 employees
+\item Attended \& contributed to managerial meetings, collaborated on creative ways to increase revenue generation \& growth.
+\item Utilized interpersonal skills to serve customers in a high-volume full-service restaurant environment with an emphasis on customer service and attention to detail
+\item Lauded for positive attitude under pressure, multi-tasking, deescalation, punctuality \& reliability, creative problem solving, and endless puns.
+\end{itemize}}
+\vspace{0.5em}
+
+
+
+% \vspace{1.0em}
+
+
+
+\section{Achievements, Leadership}
+
+\cventry{}{}{Association for Computing Machinery }{2020-2021\vspace{-1.0em}}{}{
+\textbf{Student Project Coordinator}
+% Detailed achievements:%
+\begin{itemize}
+\item Leadership role for official university ACM chapter.
+\end{itemize}}
+
+
+\cventry{}{}{Appalachian Trail Thru-Hike}{2010\vspace{-1.0em}}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item Completed hike of entire Appalachian Trail, 2,179 miles from Maine to Georgia
+\end{itemize}}
+
+
+ 
+
+
+\section{Projects}
+
+\cventry{}{}{Street Art Archive}{2021 \vspace{-1.0em}}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item Mobile web app implemented in \textbf{React Native}. 
+\item Used Google Maps API to utilize location data for user-added content
+\end{itemize}}
+% \vspace{1.0em}
+
+  
+  
+\end{document}
+
+
+
+%Where to put ACM%
