@@ -1,0 +1,221 @@
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any text font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}    
+\usepackage{pdfpages}%
+% if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage{multicol}
+% adjust the page margins
+\usepackage[scale=0.9,top=0.15cm, bottom=0.1cm]{geometry}
+% \usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\usepackage{xpatch}
+\xpatchcmd\cventry{,}{}{}{}
+
+% personal data
+
+\name{Elias}{Landsman}     
+
+
+
+% this block removes icons
+\renewcommand*{\addresssymbol}       {}
+\renewcommand*{\mobilephonesymbol}   {}
+\renewcommand*{\fixedphonesymbol}    {}
+\renewcommand*{\faxphonesymbol}      {}
+\renewcommand*{\emailsymbol}         {}
+\renewcommand*{\homepagesymbol}      {}
+\renewcommand*{\linkedinsocialsymbol}{}
+\renewcommand*{\twittersocialsymbol} {}
+\renewcommand*{\githubsocialsymbol}  {}
+
+
+
+
+% optional, remove / comment the line if not wanted
+% \address{70 Absolute Ave.}{L4Z 0A4 Mississauga}{Canada}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\vspace*{3mm}
+\phone[mobile]{(980)~254~6113}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+% \phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{eplandsman@gmail.com}                               % optional, remove / comment the line if not wanted
+ \homepage{www.eliaslandsman.com}                         % optional, remove / comment the line if not wanted
+ \social[github]{Github: elandsma}   
+  \social[linkedin]{LinkedIn: elias-landsman}   
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\vspace*{-1.05mm}
+\makecvtitle
+\vspace*{-16mm}
+
+%education: potentially remove start times. End year only, no span.%
+
+%consider relevant coursework as a list, instead of bullets, to save space
+\section{Education}
+\cventry{}{}{University of North Carolina at Asheville}{Expected May 2022}{\hspace*{-2.5 mm}  Bachelor of Science: Major in Computer Science, Concentration in Information Systems }{Major GPA: 4.0; Cumulative GPA: 3.94} 
+
+
+
+{}{Related Coursework: \begin{small} Object Oriented Programming, Data Structures \& Algorithms, Data Science, Database Management Systems,  Cybersecurity, Software Engineering, Advanced Web Technology
+\end{small}
+}
+\vspace{0.3em}
+    
+\cventry{}{}{Asheville-Buncombe Technical College}{January 2019}{\hspace*{-2.5 mm} Continued Education: Network Management, Web/Software Development }{}
+
+{Related Coursework: \begin{small} Network \& Security Foundations, PHP Programming, Linux/Unix, Routing and Switching, Databases \end{small}
+}
+\vspace{0.3em}
+    
+\cventry{}{}{Appalachian State University}{December 2009}{\hspace*{-2.5 mm} Bachelor of Arts: Major in Sociology, Minor in Psychology }{}
+
+%place in floating column? Or make smaller somehow%
+
+%\section{Technical Skills}
+% \begin{multicols}{3}
+    % \begin{itemize}
+        % \item Java
+        % \item React
+    %     \item C\#
+    %     \item JavaScript
+    %     \item Python
+    % \end{itemize}
+    % \end{multicols}
+\vspace*{-4mm}
+\section{Experience}
+% add city/state to each of these%
+
+\cventry{}{}{AlphaPoint}{December 2021 -- Present  \vspace{-1.0em}}{}{
+\textbf{Cryptocurrency Development Intern}
+% Detailed achievements:%
+\begin{itemize}
+\item Assisted with the development of cryptocurrency and tokenized digital asset exchange engines.
+\item Contributed to back-end capabilities by creating functions that interact directly with various internal and external blockchain networks such as Bitcoin, Ethereum, Tezos, and VeChain. 
+\item Feature contributions went into production and are currently part of a software kit used by over 7 million end users.
+\item \textbf{TypeScript, Node}
+\end{itemize}}
+\vspace{0.5em}
+\vspace*{-1mm}
+
+
+\cventry{}{}{BlueNine Systems}{May 2021 -- Semtember 2021  \vspace{-1.0em}}{}{
+\textbf{Software Engineering Intern}
+% Detailed achievements:%
+\begin{itemize}
+\item Assisted with development of software used by medical professionals to track surgical data. 
+%\gathered pre-, intra-, and post-operatively, as well as  tools used for other aspects of  surgery such as staff scheduling and medication accountability.
+\item Contributed a feature that enables doctors to receive a unique URL via SMS containing a token with a time-to-live. An ASP.NET REST API receives the token and provides a list of current cases that require a digital signature. Cases and associated data are presented via a mobile-first React front end as "cards" which can be selected/deselected and submitted for signing. 
+% \item My primary focus was building front ends (mobile-first, written in React), as well as contribute to API endpoints written in C\#.
+\item \textbf{React, JavaScript, C\#, Microsoft SQL Server, .NET}
+\end{itemize}}
+\vspace{0.5em}
+\vspace*{-1mm}
+
+
+\cventry{}{}{National Environmental Modeling and Analysis Center (NEMAC)}{June 2020 -- Present \vspace{-1.0em}}{}{
+\textbf{Software/Web Development Intern}
+% Detailed achievements:%
+\begin{itemize}
+\item Maintained web presence for WNC Broadband Project, which advocates for broadband access to underserved populations.
+\item Created web applications used to collect data for use in public policy advocacy, including a surveying tool for members of neighborhoods and homeowner's associations to collect data which can be used to bargain for higher quality broadband access. 
+\item \textbf{HTML, JavaScript, PHP, MySQL, CSS}
+\end{itemize}}
+% \vspace{0.1em}
+% \vspace*{-1.5mm}
+
+\vspace{0.5em}
+\vspace*{-1mm}
+
+\cventry{}{}{Wicked Weed Brewing}{May 2014 -- August 2020 \vspace{-1.0em}}{}{
+\textbf{Head Server}
+% Detailed achievements:%
+\begin{itemize}
+\item Demonstrated leadership as the representative of a team of \textasciitilde30 employees by attending \& contributing to managerial meetings, and collaborating with senior management on creative ways to increase revenue generation \& growth.
+\item Lauded for positive attitude under pressure, multi-tasking, punctuality \& reliability, creative problem solving, and endless puns.
+\end{itemize}}
+
+\vspace*{-4mm}
+
+
+\vspace{0.25em}
+
+
+
+\section{Achievements, Leadership}
+
+\cventry{}{}{Association for Computing Machinery }{2020-2021\vspace{-1.0em}}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item Acted as student project manager \& coordinator for official university ACM chapter.
+\end{itemize}}
+
+
+\cventry{}{}{Appalachian Trail Thru-Hike}{2010\vspace{-1.0em}}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item Completed hike of entire Appalachian Trail, 2,179 miles from Maine to Georgia
+\end{itemize}}
+
+\vspace*{-5mm}
+ 
+
+\section{Projects}
+
+\cventry{}{}{GraffMap: Street Art Archive}{2021-2022 \vspace{-1.1em}}{}{
+% Detailed achievements:%
+\textbf{https://GraffMap.net | https://github.com/elandsma/GraffMap}
+\begin{itemize}
+\item Cross-platform mobile application built \& deployed using \textbf{React Native}, \textbf{Supabase}, \textbf{PostgreSQL}, \textbf{Expo} and \textbf{Google Maps}.
+\item Enables collection and viewing of user-added photos of street art, tagged with geolocation and timestamp. Users can view a complete history of uploaded photos for any given location, as well as the ability to search by optional attribute tags.
+\end{itemize}
+}
+% \vspace{1.0em}
+
+
+\cventry{}{}{This Is The Gwei: Ethereum Gas Price Utility}{2021 \vspace{-1.0em}}{}{
+% Detailed achievements:%
+\textbf{https://github.com/elandsma/ThisIsTheGwei}
+\begin{itemize}
+\item Utility application built upon \textbf{Node.js} that allows users to track and store Ethereum network gas prices by consuming an external API and saving data into a \textbf{Dockerized} local \textbf{MongoDB} database instance. Uses \textbf{Express.js} to expose local public endpoints via an internal \textbf{Rest API} where users can view history of gas prices, including the average price across given intervals.
+\end{itemize}}
+% \vspace{1.0em}
+
+% \cventry{}{}{Perlemir: Automated Cryptocurrency Investment Utility}{2020-2021 \vspace{-1.0em}}{}{
+% % Detailed achievements:%
+% \begin{itemize}
+% \item Acting project manager for collaborative development with other student members of ACM. Currently in active development.
+% \item Enables users to engage in assorted investing strategies, such as dollar cost averaging, by investing in a variety of cryptocurrencies with chosen dollar amounts and frequencies. 
+% \item Utilizes the \textbf{Coinbase Pro API} with a \textbf{Flask/Python} back-end and a \textbf{React} front-end dashboard.
+% \end{itemize}}
+% % \vspace{1.0em}
+  
+ 
+\end{document}
